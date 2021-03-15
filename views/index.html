@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <p>Введите данные:</p>
+    <form action="/calculate" method="post">
+        <p>Тариф:
+            <select name="tarif">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </p>
+        <p>
+            A: <input type="number" name="a" min="0" required>
+        </p>
+        <p>
+            B: <input type="number" name="b" min="0" required>
+        </p>
+        <p>
+            C: <input type="number" name="c" min="0" required>
+        </p>
+        <p>
+            D: <input type="number" name="d" min="0" required>
+        </p>
+        <p>
+            K: <input type="number" name="k" min="0" required>
+        </p>
+        <p>
+            t: <input type="number" name="t" min="0" required>
+        </p>
+        <p><button type="submit">Подсчитать</button></p>
+    </form>
+</body>
+</html>
