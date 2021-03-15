@@ -29,4 +29,6 @@ app.post('/calculate', (req, res, next) => {
     return res.send('К оплате: ' + (input.d * input.t));
 });
 
-app.listen(3000, () => console.log('Listening port 3000'));
+const port = process.env.PORT || 8080;
+
+app.listen(port, () => console.log(`Listening on port ${port}`));
